@@ -8,12 +8,14 @@ import { IngresoComponent } from './ingreso/ingreso.component';
 import { ComunidadesComponent } from './comunidades/comunidades.component';
 import { MaterialModule } from './material/material.module';
 
+// declaramos todos los componentes q usaremos
 @NgModule({
   declarations: [
     AppComponent,
     IngresoComponent,
     ComunidadesComponent
   ],
+  // importamos todos los modulos los cuales necesitaremos
   imports: [
     BrowserModule,
     AppRoutingModule,

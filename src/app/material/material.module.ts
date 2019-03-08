@@ -27,7 +27,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Modulo que permite cargar todos aquellos modulos y componentes de Angular Material que vayamos a necesitar
-
 @NgModule({
   declarations: [],
   imports: [
