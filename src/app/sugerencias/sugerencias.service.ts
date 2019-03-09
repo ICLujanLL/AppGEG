@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Sugerencia, Grupo } from './sugerencia.module';
+import { Sugerencia, Grupo } from './sugerencia.model';
 
 @Injectable()
 export class SugerenciasService {
@@ -46,7 +46,7 @@ export class SugerenciasService {
       CodSugerencia: this.sugerencias.length,
       DaSugerencia: '',
       Calificcion: 0,
-      CodGrupo: 0,
+      CodGrupo: 0
     };
   }
 }

@@ -1,4 +1,4 @@
-import { Grupo, Sugerencia } from './../sugerencia.module';
+import { Grupo, Sugerencia } from '../sugerencia.model';
 import { SugerenciasService } from './../sugerencias.service';
 import { Component, OnInit } from '@angular/core';
 
