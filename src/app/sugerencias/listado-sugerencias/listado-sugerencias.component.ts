@@ -1,3 +1,5 @@
+import { Sugerencia, Grupo } from '../sugerencia.model';
+import { SugerenciasService } from './../sugerencias.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListadoSugerenciasComponent implements OnInit {
 
-  constructor() { }
+  sugerencias: Sugerencia[];
+  constructor(private sugerenciasService: SugerenciasService) { }
 
   ngOnInit() {
+    this.sugerencias = this.sugerenciasService.getSugerencias();
   }
 
 }

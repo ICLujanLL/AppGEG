@@ -1,7 +1,7 @@
 export interface Sugerencia {
     CodSugerencia: number;
     DaSugerencia: string;
-    Calificcion: number;
+    Calificacion: number;
     CodGrupo: number;
   }
   

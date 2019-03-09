@@ -1,3 +1,11 @@
-<p>
-  listado-sugerencias works!
-</p>
+<h2>
+  Listado de Sugerencias
+</h2>
+<div *ngIf="! sugerencias.length">No hay sugerencias por el momento</div>
+<div>
+  <article *ngFor="let sugerencia of sugerencias">
+    <span>{{sugerencia.dasugerencia}}</span>
+    <span>{{sugerencia.calificacion}}</span>
+    <span>{{sugerencia.codgrupo}}</span>
+  </article>
+</div>
