@@ -1,21 +1,30 @@
-<mat-sidenav-container>
-  
-  <mat-sidenav #sidenav>
-      <mat-nav-list>
-        <h2 mdSubheader> GEG - BOLIVIA </h2>
-        <a mat-list-item target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a>
-        <a mat-list-item target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a>
-        <a mat-list-item target="_blank" href="https://blog.angular.io/">Angular blog</a>
-    </mat-nav-list>
-  </mat-sidenav>
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav mode="side" class="shadow_right"
+                 style="min-width:50px; background: white;">
+        <mat-nav-list>
+            <h2 mdSubheader> GEG - BOLIVIA </h2>
+            <a mat-list-item target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a>
+            <a mat-list-item target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a>
+            <a mat-list-item target="_blank" href="https://blog.angular.io/">Angular blog</a>
+        </mat-nav-list>
 
-  <mat-toolbar>
-      <button type="button" mat-button (click)="sidenav.open()">Menu</button>
-      <h1>{{title}}</h1>
-  </mat-toolbar>
 
-  <div class="content">
-      <img class="logo" src="assets/geg1.jpg " width="300" height="350">
-  </div>
-  
-</mat-sidenav-container>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span><img src="./assets/geg0.png"></span>
+    </mat-toolbar>
+
+    <div class="content">
+        <img class="logo" src="assets/geg1.jpg " width="250" height="280">
+    </div>
+
+    <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
