@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AppGEG';
+  title = 'GEG - Grupos de Educadores Google - Aprende, Comparte, Inspira y fortalece a los demás.';
 }

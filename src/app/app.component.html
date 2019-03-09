@@ -1,8 +1,8 @@
 <mat-sidenav-container>
   
-  <mat-sidenav #sidenav mode="over" [(opened)]="opened">
+  <mat-sidenav #sidenav>
       <mat-nav-list>
-        <h2 mdSubheader>GEG - BOLIVIA </h2>
+        <h2 mdSubheader> GEG - BOLIVIA </h2>
         <a mat-list-item target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a>
         <a mat-list-item target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a>
         <a mat-list-item target="_blank" href="https://blog.angular.io/">Angular blog</a>
@@ -11,11 +11,11 @@
 
   <mat-toolbar>
       <button type="button" mat-button (click)="sidenav.open()">Menu</button>
-      <h1>Welcome to {{title}}!</h1>
+      <h1>{{title}}</h1>
   </mat-toolbar>
 
   <div class="content">
-      <img class="logo" src="assets/geg1.jpg ">
+      <img class="logo" src="assets/geg1.jpg " width="300" height="350">
   </div>
   
 </mat-sidenav-container>
