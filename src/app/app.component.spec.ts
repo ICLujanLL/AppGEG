@@ -30,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to AppGEG!');
+    expect(compiled.querySelector('h1').textContent).toContain('GEG BOLIVIA Grupos de Educadores Google - Aprende, Comparte, Inspira y fortalece a los demás.');
   });
 });
