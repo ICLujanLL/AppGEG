@@ -1,6 +1,6 @@
 export interface Sugerencia {
     CodSugerencia: number;
-    Sugerencia: string;
+    DaSugerencia: string;
     Calificcion: number;
     CodGrupo: number;
   }

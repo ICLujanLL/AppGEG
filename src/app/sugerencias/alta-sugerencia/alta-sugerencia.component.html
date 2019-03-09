@@ -1,3 +1,18 @@
+<h2>Alta Sugerencia</h2>
 <p>
-  alta-sugerencia works!
+  <span>Sugerencia:</span>
+  <input type="text" [(ngModel)]="sugerencia.dasugerencia">
+</p>
+<p>
+  <span>Calificación:</span>
+  <input type="text" [(ngModel)]="sugerencia.calificacion">
+</p>
+<p>
+  <span>Grupo:</span>
+  <select [(ngModel)]="sugerencia.grupo">
+    <option *ngFor="let grupo of grupos" value="{{grupo.codgrupo}}">{{grupo.descripcion}}</option>
+  </select>
+</p>
+<p>
+  <button (click)="this.nuevoSugerencia()">Guardar</button>
 </p>

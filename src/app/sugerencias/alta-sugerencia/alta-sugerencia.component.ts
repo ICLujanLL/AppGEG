@@ -1,6 +1,6 @@
+import { Grupo, Sugerencia } from './../sugerencia.module';
 import { SugerenciasService } from './../sugerencias.service';
 import { Component, OnInit } from '@angular/core';
-import { Grupo, Sugerencia } from '../sugerencia.module';
 
 @Component({
   selector: 'app-alta-sugerencia',

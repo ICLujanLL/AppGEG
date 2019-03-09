@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IngresoComponent } from './ingreso/ingreso.component';
 import { ComunidadesComponent } from './comunidades/comunidades.component';
 import { MaterialModule } from './material/material.module';
+import { SugerenciasModule } from './sugerencias/sugerencias.module';
 
 // declaramos todos los componentes q usaremos
 @NgModule({
@@ -18,6 +19,7 @@ import { MaterialModule } from './material/material.module';
   // importamos todos los modulos los cuales necesitaremos
   imports: [
     BrowserModule,
+    SugerenciasModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     // Modulo que permite cargar todos los modulos de Angular Material
