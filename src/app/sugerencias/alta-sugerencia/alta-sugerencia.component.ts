@@ -1,4 +1,6 @@
+import { SugerenciasService } from './../sugerencias.service';
 import { Component, OnInit } from '@angular/core';
+import { Grupo, Sugerencia } from '../sugerencia.module';
 
 @Component({
   selector: 'app-alta-sugerencia',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AltaSugerenciaComponent implements OnInit {
 
-  constructor() { }
+  sugerencia: Sugerencia;
+  grupos: Grupo[];
+
+  constructor(private sugerenciasService: SugerenciasService) { }
 
   ngOnInit() {
+    this.sugerencia = this.sugerenciasService.nuevoSugerencia();
+    this.grupos = this.sugerenciasService.getGrupos();
+  }
+
+  nuevoSugerencia(): void {
+    this.sugerenciasService.agregarSugerencia(this.sugerencia);
+    this.sugerencia = this.sugerenciasService.nuevoSugerencia();
   }
 
 }
