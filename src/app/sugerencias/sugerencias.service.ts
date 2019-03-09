@@ -44,7 +44,7 @@ export class SugerenciasService {
   nuevoSugerencia(): Sugerencia {
     return {
       CodSugerencia: this.sugerencias.length,
-      Sugerencia: '',
+      DaSugerencia: '',
       Calificcion: 0,
       CodGrupo: 0,
     };
