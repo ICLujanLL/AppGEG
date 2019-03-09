@@ -2,13 +2,51 @@
     <mat-sidenav #sidenav mode="side" class="shadow_right"
                  style="min-width:50px; background: white;">
         <mat-nav-list>
-            <h2 mdSubheader> GEG - BOLIVIA </h2>
+            <!-- <h2 mdSubheader> GEG - BOLIVIA </h2>
             <a mat-list-item target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a>
             <a mat-list-item target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a>
             <a mat-list-item target="_blank" href="https://blog.angular.io/">Angular blog</a>
+            -->
+            <h3 matSubheader>CONGRESO</h3>
+            <mat-list-item>
+               <mat-icon matListIcon>assignment</mat-icon>
+               <h4 matLine>Objetivos y Destinatarios</h4>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon matListIcon>note_add</mat-icon>
+                <h4 matLine>Ejes Temáticos</h4>
+             </mat-list-item>            
+             <mat-list-item>
+                <mat-icon matListIcon>calendar_today</mat-icon>
+                <h4 matLine>Cronograma</h4>
+             </mat-list-item>            
+             <mat-list-item>
+                <mat-icon matListIcon>event_seat</mat-icon>
+                <h4 matLine>Conferencias</h4>
+             </mat-list-item>                                      
+            <mat-divider></mat-divider>
+            <h3 matSubheader>INFORMACIÓN GENERAL</h3>
+            <mat-list-item>
+               <mat-icon matListIcon>location_on</mat-icon>
+               <h4 matLine>Como llegar</h4>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <h3 matSubheader>COMUNIDADES</h3>
+            <mat-list-item>
+                <mat-icon matListIcon>location_on</mat-icon>
+                <a mat-list-item target="_blank" href="https://plus.google.com/communities/113302965518151728656"><h4 matLine>G Suite Trainig</h4></a>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon matListIcon>location_on</mat-icon>
+                <a mat-list-item  target="_blank" href="https://plus.google.com/communities/118075275136793092112"><h3 matLine>Herramientas para Docentes</h3></a>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+               <mat-icon matListIcon>lock</mat-icon>
+               <h4 matLine>Cierre de Sesión</h4>
+            </mat-list-item>
+
         </mat-nav-list>
-
-
 
     </mat-sidenav>
 
@@ -17,13 +55,20 @@
       <button mat-icon-button (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
-      <span><img src="./assets/geg0.png"></span>
+      <span><img src="./assets/geg1.png"></span>
     </mat-toolbar>
 
     <div class="content">
-        <img class="logo" src="assets/geg1.jpg " width="250" height="280">
+        <img class="logo" src="assets/GegCuadro.png" width="900" height="400">
     </div>
-
+    <div>
+        ¿QUÉ ES GEG BOLIVIA?
+    </div>
+    <div>
+        <label>
+            Es un espacio creado para que nuestros docentes reflexionen abierta y creativamente, se capaciten, ayuden y colaboren entre sí, con el objetivo de que adquieran nuevas habilidades y conozcan la mejor manera de integrarlas en los procesos de enseñanza aprendizaje. GEG Bolivia, es la plataforma donde nuestros docentes tendrán la oportunidad de conectarse entre ellos a nivel nacional y con sus pares de distintas partes del mundo, brindándoles la oportunidad de expandir sus contactos tanto personales como profesionales. GEG Bolivia, tiene las puertas abiertas para todo aquel que quiera entrar. Puedes ser director, administrador de una escuela, docente, estudiante o simplemente alguien interesado en usar los productos de Google para contribuir al aprendizaje de la gente.
+        </label>
+    </div>
     <router-outlet></router-outlet>
     </mat-sidenav-content>
 
