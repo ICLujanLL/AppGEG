@@ -5,7 +5,6 @@ import { SugerenciasService } from './sugerencias.service';
 import { AltaSugerenciaComponent } from './alta-sugerencia/alta-sugerencia.component';
 import { ListadoSugerenciasComponent } from './listado-sugerencias/listado-sugerencias.component';
 import { ItemSugerenciaComponent } from './item-sugerencia/item-sugerencia.component';
-import { CuadroComponent } from './alta-sugerencia/cuadro/cuadro.component';
 
 @NgModule({
   imports: [
@@ -15,8 +14,7 @@ import { CuadroComponent } from './alta-sugerencia/cuadro/cuadro.component';
   declarations: [
     AltaSugerenciaComponent,
     ListadoSugerenciasComponent,
-    ItemSugerenciaComponent,
-    CuadroComponent
+    ItemSugerenciaComponent
   ],
   exports: [
     AltaSugerenciaComponent,
