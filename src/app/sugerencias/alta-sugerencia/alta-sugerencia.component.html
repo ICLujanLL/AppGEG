@@ -10,7 +10,7 @@
 <p>
   <span>Grupo:</span>
   <select [(ngModel)]="sugerencia.grupo">
-    <option *ngFor="let grupo of grupos" value="{{grupo.codgrupo}}">{{grupo.descripcion}}</option>
+    <option *ngFor="let grupo of grupos" value="{{grupo.id}}">{{grupo.descripcion}}</option>
   </select>
 </p>
 <p>

@@ -1,11 +1,15 @@
 <h2>
   Listado de Sugerencias
 </h2>
-<div *ngIf="! sugerencias.length">No hay sugerencias por el momento</div>
+<div *ngIf="! sugerencias.length">No hay sugerencia por el momento</div>
 <div>
-  <article *ngFor="let sugerencia of sugerencias">
-    <span>{{sugerencia.dasugerencia}}</span>
-    <span>{{sugerencia.calificacion}}</span>
-    <span>{{sugerencia.codgrupo}}</span>
-  </article>
+  <app-item-sugerencia 
+    *ngFor="let sugerencia of sugerencias" 
+    [sugerencia]="sugerencia"
+    (borrarSugerencia)="doBorrarSugerencia($event)"
+  ></app-item-sugerencia>
 </div>
+
+<p>
+  {{ sugerencias$ | async | json }}
+</p>

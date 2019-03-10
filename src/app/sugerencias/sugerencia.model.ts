@@ -1,12 +1,12 @@
 export interface Sugerencia {
-    CodSugerencia: number;
+    id: number;
     DaSugerencia: string;
     Calificacion: number;
-    CodGrupo: number;
+    grupo: number;
   }
   
   export interface Grupo {
-    CodGrupo: number;
+    id: number;
     Descripcion: string;
   }
   
