@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IngresoComponent } from './ingreso/ingreso.component';
 import { ComunidadesComponent } from './comunidades/comunidades.component';
 import { SugerenciasModule } from './sugerencias/sugerencias.module';
-import { environment } from 'src/environments/environment';
+
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
