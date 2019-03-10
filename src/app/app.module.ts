@@ -12,7 +12,7 @@ import { ComunidadesComponent } from './comunidades/comunidades.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material';
-import { AltaSugerenciaComponent } from './sugerencias/alta-sugerencia/alta-sugerencia.component';
+
 import { SugerenciasModule } from './sugerencias/sugerencias.module';
 
 
@@ -22,7 +22,6 @@ import { SugerenciasModule } from './sugerencias/sugerencias.module';
     AppComponent,
     IngresoComponent,
     ComunidadesComponent,
-    AltaSugerenciaComponent
   ],
   // importamos todos los modulos los cuales necesitaremos
   imports: [
