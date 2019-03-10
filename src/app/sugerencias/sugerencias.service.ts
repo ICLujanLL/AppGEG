@@ -14,20 +14,20 @@ export class SugerenciasService {
   constructor() {
     this.grupos = [
       {
-        CodGrupo: 0,
-        Descripcion: 'Sin definir'
+        id: 0,
+        descripcion: 'Sin definir'
       },
       {
-        CodGrupo: 1,
-        Descripcion: 'Congreso'
+        id: 1,
+        descripcion: 'Congreso'
       },
       {
-        CodGrupo: 2,
-        Descripcion: 'Conferencia'
+        id: 2,
+        descripcion: 'Conferencia'
       },
       {
-        CodGrupo: 3,
-        Descripcion: 'Agenda'
+        id: 3,
+        descripcion: 'Agenda'
       },
     ];
     this.sugerencias = [];
@@ -48,10 +48,10 @@ export class SugerenciasService {
 
   nuevoSugerencia(): Sugerencia {
     return {
-      CodSugerencia: this.sugerencias.length,
-      DaSugerencia: '',
-      Calificacion: 0,
-      CodGrupo: 0
+      id: this.sugerencias.length,
+      dasugerencia: '',
+      calificacion: 0,
+      grupo: 0
     };
   }
 
