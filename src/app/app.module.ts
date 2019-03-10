@@ -1,3 +1,4 @@
+import { MaterialModule } from './material/material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,8 +7,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IngresoComponent } from './ingreso/ingreso.component';
 import { ComunidadesComponent } from './comunidades/comunidades.component';
-import { MaterialModule } from './material/material.module';
 import { SugerenciasModule } from './sugerencias/sugerencias.module';
+import { environment } from 'src/environments/environment';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // declaramos todos los componentes q usaremos
 @NgModule({
@@ -18,6 +21,15 @@ import { SugerenciasModule } from './sugerencias/sugerencias.module';
   ],
   // importamos todos los modulos los cuales necesitaremos
   imports: [
+    // Para integrar con angular firebase
+    // AngularFireModule.initializeApp(environment.firebase),
+    // AngularFirestoreModule,
+    // Para el ejemplo de la nube de palabras
+    // TagCloudModule,
+    // Modulo que permite el manejo de formularios
+    FormsModule,
+    // Modulo que permite realizar peticiones sobre http
+    HttpClientModule,
     BrowserModule,
     SugerenciasModule,
     AppRoutingModule,
