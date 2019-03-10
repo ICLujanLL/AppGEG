@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Sugerencia, Grupo } from './sugerencia.model';
-import { Observable } from 'rxjs/Observable';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs/internal/Subject';
+import { Observable } from 'rxjs/internal/Observable';
+
 
 @Injectable()
 export class SugerenciasService {
