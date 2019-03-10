@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Sugerencia, Grupo } from './sugerencia.model';
+import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class SugerenciasService {
 
   private sugerencias: Sugerencia[];
   private grupos: Grupo[];
+  private sugerencias$: Subject<Sugerencia[]> = new Subject<Sugerencia[]>();
 
   constructor() {
     this.grupos = [
@@ -33,12 +36,13 @@ export class SugerenciasService {
     return this.grupos;
   }
 
-  getSugerencias() {
-    return this.sugerencias;
+  getSugerencias$(): Observable<Sugerencia[]> {
+    return this.sugerencias$.asObservable();
   }
 
-  agregarSugerencia(Sugerencia: Sugerencia) {
-    this.sugerencias.push(Sugerencia);
+  agregarSugerencia(sugerencia: Sugerencia) {
+    this.sugerencias.push(sugerencia);
+    this.sugerencias$.next(this.sugerencias);
   }
 
   nuevoSugerencia(): Sugerencia {
@@ -49,4 +53,14 @@ export class SugerenciasService {
       CodGrupo: 0
     };
   }
+
+  borrarSugerencia(sugerencia: Sugerencia): void {
+    for (let i = 0; i < this.sugerencias.length; i++) {
+      if (sugerencia === this.sugerencias[i]) {
+        this.sugerencias.splice(i, 1);
+        break;
+      }
+    }
+  }
+
 }

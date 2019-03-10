@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { SugerenciasService } from './sugerencias.service';
 import { AltaSugerenciaComponent } from './alta-sugerencia/alta-sugerencia.component';
 import { ListadoSugerenciasComponent } from './listado-sugerencias/listado-sugerencias.component';
+import { ItemSugerenciaComponent } from './item-sugerencia/item-sugerencia.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { ListadoSugerenciasComponent } from './listado-sugerencias/listado-suger
   ],
   declarations: [
     AltaSugerenciaComponent,
-    ListadoSugerenciasComponent
+    ListadoSugerenciasComponent,
+    ItemSugerenciaComponent
   ],
   exports: [
     AltaSugerenciaComponent,
