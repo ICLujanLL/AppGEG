@@ -8,12 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IngresoComponent } from './ingreso/ingreso.component';
 import { ComunidadesComponent } from './comunidades/comunidades.component';
 
-
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material';
 
 import { SugerenciasModule } from './sugerencias/sugerencias.module';
+
+import {MatCardModule, MatButtonModule} from '@angular/material'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 // declaramos todos los componentes q usaremos
@@ -38,11 +39,16 @@ import { SugerenciasModule } from './sugerencias/sugerencias.module';
     SugerenciasModule,
     AppRoutingModule,
     // Modulo que permite el manejo de formulario reactivos
-    ReactiveFormsModule,  
-    BrowserAnimationsModule,
     MatNativeDateModule,
     // Modulo que permite cargar todos los modulos de Angular Material
-    MaterialModule
+    // MaterialModule
+
+    // ver nuevament
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatCardModule, MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
