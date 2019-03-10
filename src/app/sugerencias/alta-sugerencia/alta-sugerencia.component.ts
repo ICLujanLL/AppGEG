@@ -23,5 +23,4 @@ export class AltaSugerenciaComponent implements OnInit {
     this.sugerenciasService.agregarSugerencia(this.sugerencia);
     this.sugerencia = this.sugerenciasService.nuevoSugerencia();
   }
-
 }

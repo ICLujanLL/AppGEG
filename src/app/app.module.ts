@@ -12,6 +12,7 @@ import { SugerenciasModule } from './sugerencias/sugerencias.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 // declaramos todos los componentes q usaremos
 @NgModule({
   declarations: [
