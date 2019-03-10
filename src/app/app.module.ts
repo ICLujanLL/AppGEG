@@ -21,7 +21,7 @@ import { SugerenciasModule } from './sugerencias/sugerencias.module';
   declarations: [
     AppComponent,
     IngresoComponent,
-    ComunidadesComponent,
+    ComunidadesComponent
   ],
   // importamos todos los modulos los cuales necesitaremos
   imports: [
