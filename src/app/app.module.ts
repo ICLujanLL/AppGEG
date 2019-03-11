@@ -14,9 +14,8 @@ import { MatNativeDateModule } from '@angular/material';
 import { SugerenciasModule } from './sugerencias/sugerencias.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ObjetivoComponent } from './congreso/objetivo/objetivo.component';
+import { EjesTematicosComponent } from './congreso/ejes-tematicos/ejes-tematicos.component';
 import { ComollegarComponent } from './comollegar/comollegar.component';
-
-
 
 // declaramos todos los componentes q usaremos
 @NgModule({
@@ -25,6 +24,7 @@ import { ComollegarComponent } from './comollegar/comollegar.component';
     IngresoComponent,
     ComunidadesComponent,
     ObjetivoComponent,
+    EjesTematicosComponent,
     ComollegarComponent
   ],
   // importamos todos los modulos los cuales necesitaremos
