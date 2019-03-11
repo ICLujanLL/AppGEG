@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'objetivo-component', component: ObjetivoComponent
   },
   {
-    path: 'eje-tematicos-component', component: EjesTematicosComponent
+    path: 'ejestematicos-component', component: EjesTematicosComponent
   }
 ];
 
