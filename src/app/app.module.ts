@@ -15,6 +15,7 @@ import { SugerenciasModule } from './sugerencias/sugerencias.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ObjetivoComponent } from './congreso/objetivo/objetivo.component';
 import { ComollegarComponent } from './comollegar/comollegar.component';
+import { AltaSugerenciaComponent } from './sugerencias/alta-sugerencia/alta-sugerencia.component';
 
 
 // declaramos todos los componentes q usaremos
@@ -24,6 +25,7 @@ import { ComollegarComponent } from './comollegar/comollegar.component';
     IngresoComponent,
     ComunidadesComponent,
     ObjetivoComponent,
+    AltaSugerenciaComponent,
     ComollegarComponent
   ],
   // importamos todos los modulos los cuales necesitaremos
