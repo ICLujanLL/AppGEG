@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AltaSugerenciaComponent } from './sugerencias/alta-sugerencia/alta-sugerencia.component';
+import { ObjetivoComponent } from './congreso/objetivo/objetivo.component';
 
 
 const routes: Routes = [
   {
     path: 'alta-sugerencia', component: AltaSugerenciaComponent
+  },
+  {
+    path: 'objetivo-component', component: ObjetivoComponent
   }
 ];
 

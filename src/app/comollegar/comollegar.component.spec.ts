@@ -1,19 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { AltaSugerenciaComponent } from './alta-sugerencia.component';
 
-describe('AltaSugerenciaComponent', () => {
-  let component: AltaSugerenciaComponent;
-  let fixture: ComponentFixture<AltaSugerenciaComponent>;
+import { ComollegarComponent } from './comollegar.component';
+
+describe('ComollegarComponent', () => {
+  let component: ComollegarComponent;
+  let fixture: ComponentFixture<ComollegarComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AltaSugerenciaComponent ]
+      declarations: [ ComollegarComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AltaSugerenciaComponent);
+    fixture = TestBed.createComponent(ComollegarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

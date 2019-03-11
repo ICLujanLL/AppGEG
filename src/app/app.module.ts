@@ -12,9 +12,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatNativeDateModule } from '@angular/material';
 
 import { SugerenciasModule } from './sugerencias/sugerencias.module';
-
-import {MatCardModule, MatButtonModule} from '@angular/material'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ObjetivoComponent } from './congreso/objetivo/objetivo.component';
+import { ComollegarComponent } from './comollegar/comollegar.component';
 
 
 // declaramos todos los componentes q usaremos
@@ -22,7 +22,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     IngresoComponent,
-    ComunidadesComponent
+    ComunidadesComponent,
+    ObjetivoComponent,
+    ComollegarComponent
   ],
   // importamos todos los modulos los cuales necesitaremos
   imports: [
@@ -31,22 +33,19 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     // AngularFirestoreModule,
     // Para el ejemplo de la nube de palabras
     // TagCloudModule,
-    // Modulo que permite el manejo de formularios
-    FormsModule,
     // Modulo que permite realizar peticiones sobre http
     HttpClientModule,
-    BrowserModule,
     SugerenciasModule,
     AppRoutingModule,
     // Modulo que permite el manejo de formulario reactivos
     MatNativeDateModule,
     // Modulo que permite cargar todos los modulos de Angular Material
-    // MaterialModule
+    MaterialModule,
 
-    // ver nuevament
+    // ver nuevamente
     BrowserModule,
     BrowserAnimationsModule,
-    MatCardModule, MatButtonModule,
+
     FormsModule,
     ReactiveFormsModule
   ],
