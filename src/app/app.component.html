@@ -2,11 +2,6 @@
     <mat-sidenav #sidenav mode="side" class="shadow_right"
                  style="min-width:50px; background: white;">
         <mat-nav-list>
-            <!-- <h2 mdSubheader> GEG - BOLIVIA </h2>
-            <a mat-list-item target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a>
-            <a mat-list-item target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a>
-            <a mat-list-item target="_blank" href="https://blog.angular.io/">Angular blog</a>
-            -->
             <h3 matSubheader>CONGRESO</h3>
             <mat-list-item role="listitem" [routerLink]="['objetivo-component']">
                <mat-icon matListIcon>assignment</mat-icon>
@@ -25,7 +20,7 @@
                 <h4 matLine>Conferencias</h4>
              </mat-list-item>                                      
             <mat-divider></mat-divider>
-            <mat-list-item role="listitem" [routerLink]="['alta-sugerencia-component']">
+            <mat-list-item role="listitem" [routerLink]="['altasugerencia-component']">
                <mat-icon matListIcon>speaker_notes</mat-icon>
                <h4 matLine>SUGERENCIAS</h4>
             </mat-list-item>
@@ -44,9 +39,7 @@
                <mat-icon matListIcon>lock</mat-icon>
                <h4 matLine>Cierre de Sesión</h4>
             </mat-list-item>
-
         </mat-nav-list>
-
     </mat-sidenav>
 
     <mat-sidenav-content>
@@ -58,12 +51,11 @@
       <div>
           <ul class="navigation-items">
               <li>
-                   <a routerLink="/comollegar" class="button">COMO LLEGAR</a> 
+                <a class="button">COMO LLEGAR</a> 
               </li>
           </ul>
       </div>      
     </mat-toolbar>
-
 
     <router-outlet></router-outlet>
     </mat-sidenav-content>

@@ -6,7 +6,7 @@ import { ObjetivoComponent } from './congreso/objetivo/objetivo.component';
 
 const routes: Routes = [
   {
-    path: 'alta-sugerencia-component', component: AltaSugerenciaComponent
+    path: 'altasugerencia-component', component: AltaSugerenciaComponent
   },
   {
     path: 'objetivo-component', component: ObjetivoComponent
