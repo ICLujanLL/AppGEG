@@ -22,6 +22,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { QueesgegComponent } from './congreso/queesgeg/queesgeg.component';
 
 var config = { apiKey : "AIzaSyAwPVjdddW-8HaEe2GsihK7uQcDLUMDIGs" , authDomain : "paappgegfb.firebaseapp.com" , databaseURL : "https://paappgegfb.firebaseio.com" , projectId : "paappgegfb" , storageBucket : "paappgegfb.appspot.com" , messagingSenderId : "499695177432" }; 
 
@@ -33,7 +34,8 @@ var config = { apiKey : "AIzaSyAwPVjdddW-8HaEe2GsihK7uQcDLUMDIGs" , authDomain :
     ComunidadesComponent,
     ObjetivoComponent,
     EjesTematicosComponent,
-    ComollegarComponent
+    ComollegarComponent,
+    QueesgegComponent
   ],
   // importamos todos los modulos los cuales necesitaremos
   imports: [
