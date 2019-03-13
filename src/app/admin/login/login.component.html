@@ -9,7 +9,7 @@
 
     <input type="text" matInput placeholder="Correo" required autofocus >
     <input type="password" matInput placeholder="Clave" required autofocus >
-    <button class="full-width" mat-button color="warn">Continuar</button>
+    <button class="full-width" mat-button color="warn" (click)="authService.login(userEmail.value, userPassword.value")>Continuar</button>
 
   </mat-card-content>
 

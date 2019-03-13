@@ -10,3 +10,13 @@ describe('ServicioGEGService', () => {
     expect(service).toBeTruthy();
   });
 });
+
+this.afAuth.authState.subscribe(user => {
+  if (user) {
+    this.user = user;
+    localStorage.setItem('user', JSON.stringify(this.user));
+  } else {
+    localStorage.setItem('user', null);
+  }
+});
+
