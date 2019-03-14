@@ -9,6 +9,7 @@ const routes: Routes = [
   {
     path: 'altasugerencia-component', component: AltaSugerenciaComponent
   },
+  { path: '', redirectTo: '/altasugerencia-component', pathMatch: 'full' }
   {
     path: 'queesgeg-component', component: QueesgegComponent
   },
