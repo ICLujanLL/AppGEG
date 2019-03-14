@@ -48,18 +48,39 @@
 
     <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button mat-icon-button (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span><img src="./assets/geg1.png"></span>
-      <span ng-repeat="label in labels">xxx</span>
-      <div>
-          <ul class="navigation-items">
-              <li>
-                <a class="button">Cerrar Sesión</a> 
-              </li>
-          </ul>
-      </div>      
+        <mat-toolbar-row>
+      <div fxFlex fxLayout fxLayoutAlign="flex-end">
+
+        <ul fxLayout fxLayoutGap="20px">
+  
+          <li fxHide.xs>
+            <button mat-icon-button>
+              <mat-icon>settings</mat-icon>
+            </button>
+          </li>
+  
+          <li fxHide.xs>
+            <button mat-icon-button>
+              <mat-icon>help_outline</mat-icon>
+            </button>
+          </li>
+  
+          <li>
+            <button mat-icon-button [matMenuTriggerFor]="auth">
+              <mat-icon>person_outline</mat-icon>
+            </button>
+            <mat-menu #auth="matMenu">
+              <button mat-menu-item (click)="logout()">
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Sign out</span>
+              </button>
+            </mat-menu>
+          </li>
+  
+        </ul>
+  
+      </div>
+    </mat-toolbar-row>
     </mat-toolbar>
 
 

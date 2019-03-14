@@ -4,9 +4,6 @@ import { AltaSugerenciaComponent } from './sugerencias/alta-sugerencia/alta-suge
 import { ObjetivoComponent } from './congreso/objetivo/objetivo.component';
 import { EjesTematicosComponent } from './congreso/ejes-tematicos/ejes-tematicos.component';
 import { QueesgegComponent } from './congreso/queesgeg/queesgeg.component';
-import { LoginComponent } from './admin/login/login.component';
-
-
 
 const routes: Routes = [
   {
@@ -20,8 +17,7 @@ const routes: Routes = [
   },
   {
     path: 'ejestematicos-component', component: EjesTematicosComponent
-  },
-  { path:  'login',component:  LoginComponent}
+  }
 ];
 
 @NgModule({

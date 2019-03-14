@@ -23,6 +23,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { QueesgegComponent } from './congreso/queesgeg/queesgeg.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 var config = { apiKey : "AIzaSyAwPVjdddW-8HaEe2GsihK7uQcDLUMDIGs" , 
                authDomain : "paappgegfb.firebaseapp.com" , 
@@ -60,6 +61,8 @@ var config = { apiKey : "AIzaSyAwPVjdddW-8HaEe2GsihK7uQcDLUMDIGs" ,
     AppRoutingModule,
     // Modulo que permite el manejo de formulario reactivos
     MatNativeDateModule,
+
+    FlexLayoutModule,
     // Modulo que permite cargar todos los modulos de Angular Material
     MaterialModule,
 
